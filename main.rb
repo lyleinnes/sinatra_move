@@ -14,7 +14,9 @@ get '/peak' do
   erb :peak
 end
 
-
+get '/mockup' do
+  erb :mockup
+end
 
 
 

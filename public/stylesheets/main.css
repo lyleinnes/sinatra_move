@@ -1,12 +1,44 @@
-.temp {
-  margin: 10px auto;
+.tester {
+  width: 450px;
+  height: 750px;
+  border: 10px solid black;
+  border-radius: 15px;
+  display: inline-block;
+  background-image: url("https://i.imgur.com/gi2g7Px.png");
+  background-size: 100%;
+  position: relative;
+}
+
+.some-point {
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  top: 250px;
+  left: 200px;
+}
+
+.user-point {
+  position: fixed;
+  height: 20px;
+  width: 20px;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.some-route {
+  
 }
 
 .phone-screen {
   width: 450px;
   height: 750px;
   background-color: lightgrey;
-  /*margin: 20px auto;*/
   border-radius: 15px;
   display: inline-block;
 }
@@ -17,5 +49,5 @@
   background-color: lightblue;
   display: inline-block;
   vertical-align: top;
-  /*margin: 20px auto;*/
+  margin-left: 20px;
 }

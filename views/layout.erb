@@ -7,16 +7,17 @@
 </head>
 <body>
 
-<div class="temp">
-  <main class="phone-screen">
-    <%= yield %>
-  </main>
-  <div class="time-buttons">
-    <div class="lunch"><a href="/">time1</a></div>
-    <div class="quiet"><a href="/quiet">time2</a></div>
-    <div class="peak"><a href="/peak">time3</a></div>
-  </div>
+<main class="phone-screen">
+  <%= yield %>
+</main>
+
+<div class="time-buttons">
+  <div class="lunch"><a href="/">1200h</a></div>
+  <div class="quiet"><a href="/quiet">1500h</a></div>
+  <div class="peak"><a href="/peak">1700h</a></div>
+  <div class="mockup"><a href="/mockup">mockup</a></div>
 </div>
 
+<script src="/javascripts/application.js"></script>
 </body>
 </html>
