@@ -1,8 +1,17 @@
      
 require 'sinatra'
+require 'sinatra/reloader'
 
 get '/' do
-  erb :index
+  erb :lunch
+end
+
+get '/quiet' do
+  erb :quiet
+end
+
+get '/peak' do
+  erb :peak
 end
 
 
