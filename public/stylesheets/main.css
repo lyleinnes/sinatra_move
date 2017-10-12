@@ -1,0 +1,21 @@
+.temp {
+  margin: 10px auto;
+}
+
+.phone-screen {
+  width: 450px;
+  height: 750px;
+  background-color: lightgrey;
+  /*margin: 20px auto;*/
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.time-buttons {
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  display: inline-block;
+  vertical-align: top;
+  /*margin: 20px auto;*/
+}

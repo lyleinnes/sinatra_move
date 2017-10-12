@@ -2,12 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hello World</title>
+  <title>moving melbourne</title>
   <link rel='stylesheet' href='/stylesheets/main.css'>
 </head>
 <body>
 
-  <%= yield %>
+<div class="temp">
+  <main class="phone-screen">
+    <%= yield %>
+  </main>
+  <div class="time-buttons">
+    <div class="lunch">time1</div>
+    <div class="quiet">time2</div>
+    <div class="peak">time3</div>
+  </div>
+</div>
 
 </body>
 </html>
