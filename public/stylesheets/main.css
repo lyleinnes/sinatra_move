@@ -1,4 +1,11 @@
-
+* {
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
 .phone-screen {
   width: 421px;
   height: 750px;
@@ -30,8 +37,48 @@
   height: 100%;
 }
 
+.poi-one-info {
+  background-color: #c1c5d1;
+  border-radius: 0 0 15px 15px;
+}
+.poi-one-info button {
+  display: block;
+  position: absolute;
+  top: -40px;
+}
+.poi-one-info i {
+  display: inline-block;
+  font-size: 90px;
+  text-align: center;
+  vertical-align: top;
+  width: 29%;
+}
+.poi-one-info .main-info {
+  display: inline-block;
+}
+.main-info {
+  text-align: center;
+  width: 70%;
+}
+.main-info h2 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.main-info p {
+  font-weight: 700;
+}
+.poi-one-info .info {
+  background-color: #3578BC;
+  height: 48px;
+  border-radius: 0 0 15px 15px;
+  padding: 12px 10px 0 10px;
+  color: #fff;
+  text-align: center;
+}
 
-.poi-one-info, .directions, .go-button, .route-one {
+
+ .directions, .go-button, .route-one {
   background-color: rgba(255,255,0,0.5);
 }
 .disruption {
@@ -62,10 +109,16 @@
   height: 60px;
   width: 60px;
   vertical-align: middle;
+  background-color: #3578BC;
+  color: #fff;
 }
 
-.poi-one p, .poi-two p, .poi-three p, .disruption p {
+.poi-one i, .poi-two i, .poi-three i, .poi-one-special i, .disruption p {
   text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+  width: 60px;
+  font-size: 20px;
 }
 #lunch .path-toggle {
   background-image: url('/images/routing-august22-12pm.png');
@@ -91,7 +144,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 150px;
+  height: 200px;
 }
 .hide {
   display: none;
@@ -120,11 +173,7 @@
   left: 145px;
   height: 15px;
   width: 15px;
-  background-color: purple;
-  box-shadow: 0 0 purple;
+  background-color: #3578BC;
   border-radius: 50%;
   transition: all ease-in .5s;
-}
-.user-blur {
-  box-shadow: 0 0 10px 5px purple;
 }
