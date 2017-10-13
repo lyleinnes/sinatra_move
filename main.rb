@@ -1,6 +1,9 @@
 
 require 'sinatra'
-require 'sinatra/reloader'
+
+if ENV['RACK_ENV'] != 'production'
+  require 'sinatra/reloader'
+end
 
 get '/' do
   erb :lunch
