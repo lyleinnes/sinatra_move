@@ -11,10 +11,25 @@
   background-repeat: no-repeat;
   border: 2px solid lightgrey;
 }
-
-.hide {
-  display: none;
+#lunch {
+  background-image: url('/images/congestion-august22-12pm.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
 }
+#six-pm {
+  background-image: url('/images/congestion-august22-6pm.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+#special-event {
+  background-image: url('/images/congestion-march21-6pm.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
 
 .poi-one-info, .directions, .go-button, .route-one {
   background-color: rgba(255,255,0,0.5);
@@ -41,7 +56,7 @@
   background-color: #444;
 }
 
-.poi-one, .poi-two, .poi-three, .disruption {
+.poi-one, .poi-two, .poi-three, .disruption, .poi-one-special {
   display: inline-block;
   border-radius: 50%;
   height: 60px;
@@ -51,4 +66,65 @@
 
 .poi-one p, .poi-two p, .poi-three p, .disruption p {
   text-align: center;
+}
+#lunch .path-toggle {
+  background-image: url('/images/routing-august22-12pm.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#six-pm .path-toggle {
+  background-image: url('/images/routing-august22-6pm.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+#special-event .path-toggle {
+
+  height: 100%;
+}
+.lunch, .six-pm, .special-event {
+  position: relative;
+}
+.poi-one-info, .directions {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+}
+.hide {
+  display: none;
+}
+.qv, .chinatown, .townhall, .parliament, .user {
+  position: absolute;
+}
+.qv {
+  left: 178px;
+  top: 19px;
+}
+.chinatown {
+  right: 78px;
+  top: 206px;
+}
+.townhall {
+  top: 359px;
+  right: 34px;
+}
+.parliament {
+  top: 655px;
+  right: 115px;
+}
+.user {
+  top: 412px;
+  left: 145px;
+  height: 15px;
+  width: 15px;
+  background-color: purple;
+  box-shadow: 0 0 purple;
+  border-radius: 50%;
+  transition: all ease-in .5s;
+}
+.user-blur {
+  box-shadow: 0 0 10px 5px purple;
 }
