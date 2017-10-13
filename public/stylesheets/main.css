@@ -1,53 +1,130 @@
-.tester {
-  width: 450px;
-  height: 750px;
-  border: 10px solid black;
-  border-radius: 15px;
-  display: inline-block;
-  background-image: url("https://i.imgur.com/gi2g7Px.png");
-  background-size: 100%;
-  position: relative;
-}
-
-.some-point {
-  position: fixed;
-  height: 30px;
-  width: 30px;
-  background-color: green;
-  border-radius: 50%;
-  position: absolute;
-  top: 250px;
-  left: 200px;
-}
-
-.user-point {
-  position: fixed;
-  height: 20px;
-  width: 20px;
-  background-color: green;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
-.some-route {
-  
-}
 
 .phone-screen {
-  width: 450px;
+  width: 421px;
   height: 750px;
-  background-color: lightgrey;
+  background-color: #f7f7f7;
   border-radius: 15px;
-  display: inline-block;
+  display: block;
+  margin: 20px auto;
+  background-image: url('/images/mapBackground.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 2px solid lightgrey;
+}
+#lunch {
+  background-image: url('/images/congestion-august22-12pm.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+#six-pm {
+  background-image: url('/images/congestion-august22-6pm.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+#special-event {
+  background-image: url('/images/congestion-march21-6pm.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
+
+.poi-one-info, .directions, .go-button, .route-one {
+  background-color: rgba(255,255,0,0.5);
+}
+.disruption {
+  background-color: rgba(255,0,0,0.5)
+}
 .time-buttons {
-  width: 200px;
-  height: 100px;
-  background-color: lightblue;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.time-buttons a {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 7px;
+  text-decoration: none;
+  font-family: sans-serif;
+  margin: 0 10px;
+}
+.time-buttons a:hover {
+  background-color: #444;
+}
+
+.poi-one, .poi-two, .poi-three, .disruption, .poi-one-special {
   display: inline-block;
-  vertical-align: top;
-  margin-left: 20px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  vertical-align: middle;
+}
+
+.poi-one p, .poi-two p, .poi-three p, .disruption p {
+  text-align: center;
+}
+#lunch .path-toggle {
+  background-image: url('/images/routing-august22-12pm.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#six-pm .path-toggle {
+  background-image: url('/images/routing-august22-6pm.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+#special-event .path-toggle {
+
+  height: 100%;
+}
+.lunch, .six-pm, .special-event {
+  position: relative;
+}
+.poi-one-info, .directions {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+}
+.hide {
+  display: none;
+}
+.qv, .chinatown, .townhall, .parliament, .user {
+  position: absolute;
+}
+.qv {
+  left: 178px;
+  top: 19px;
+}
+.chinatown {
+  right: 78px;
+  top: 206px;
+}
+.townhall {
+  top: 359px;
+  right: 34px;
+}
+.parliament {
+  top: 655px;
+  right: 115px;
+}
+.user {
+  top: 412px;
+  left: 145px;
+  height: 15px;
+  width: 15px;
+  background-color: purple;
+  box-shadow: 0 0 purple;
+  border-radius: 50%;
+  transition: all ease-in .5s;
+}
+.user-blur {
+  box-shadow: 0 0 10px 5px purple;
 }

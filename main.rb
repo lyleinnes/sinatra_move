@@ -1,4 +1,4 @@
-     
+
 require 'sinatra'
 require 'sinatra/reloader'
 
@@ -6,17 +6,14 @@ get '/' do
   erb :lunch
 end
 
-get '/quiet' do
-  erb :quiet
+get '/sixpm' do
+  erb :sixpm
 end
 
-get '/peak' do
-  erb :peak
+get '/special-event' do
+  erb :comedyfest
 end
 
 get '/mockup' do
   erb :mockup
 end
-
-
-
