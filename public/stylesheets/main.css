@@ -1,6 +1,7 @@
 * {
 font-family: 'Roboto', sans-serif;
 font-weight: 400;
+outline: none;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
@@ -37,38 +38,61 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 
-.poi-one-info {
+.poi-one-info, .directions {
   background-color: #c1c5d1;
   border-radius: 0 0 15px 15px;
+
 }
-.poi-one-info button {
+.poi-one-info button, .directions button {
   display: block;
   position: absolute;
   top: -40px;
+  background-color: #74C9F1;
+  border-radius: 20px;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  width: 240px;
+
 }
-.poi-one-info i {
+.poi-one-info button span, .directions button span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.poi-one-info button::before .directions button::before {
+  padding-right: 10px;
+
+}
+.poi-one-info i, .directions i {
   display: inline-block;
   font-size: 90px;
   text-align: center;
   vertical-align: top;
   width: 29%;
 }
-.poi-one-info .main-info {
+.poi-one-info .main-info, .directions .directions-info {
   display: inline-block;
 }
-.main-info {
+.main-info, .directions-info {
   text-align: center;
   width: 70%;
 }
-.main-info h2 {
+.main-info h2, .directions-info h2 {
   font-size: 40px;
-  margin-top: 0;
+  margin-top: 25px;
   margin-bottom: 0;
 }
-.main-info p {
+.main-info p, .directions-info p {
   font-weight: 700;
 }
-.poi-one-info .info {
+.directions-info p {
+  margin-bottom: 0;
+}
+.directions-info h2 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.poi-one-info .info, .directions .info {
   background-color: #3578BC;
   height: 48px;
   border-radius: 0 0 15px 15px;
@@ -76,11 +100,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   text-align: center;
 }
-
-
- .directions, .go-button, .route-one {
-  background-color: rgba(255,255,0,0.5);
+.directions .info {
+  margin-top: 13px;
 }
+
 .disruption {
   background-color: rgba(255,0,0,0.5)
 }
