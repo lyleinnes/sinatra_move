@@ -5,10 +5,7 @@ console.log('JS is on!')
 //===//
 
 var toggleVanish = function (object) {
-  if (object.style.display !== "none") {
-    object.style.display = "none"
-  } else
-    object.style.display = ""
+  object.classList.toggle("hide");
 };
 
 //===//
@@ -47,9 +44,6 @@ var userPoint = document.querySelector(".user-point");
 var somePoint = document.querySelector(".some-point");
 
 
-
-
-
 //===//
 // ADDING EVENT LISTENERS TO DOM OBJECTS //
 //===//
@@ -59,22 +53,25 @@ poiOne.addEventListener("click", function() {
   toggleVanish(routeOne);
   toggleVanish(poiOneInfo);
   toggleVanish(goButton);
-  goButton.style.display = routeOne.style.display;
-  if (directions.style.display === "") {
-    directions.style.display = "none"
-  }
+
+  if (poiOneInfo.classList.contains("hide")) {
+    directions.classList.add("hide");
+    goButton.classList.add("hide");
+  };
+
+  // goButton.style.display = routeOne.style.display;
+  // if (directions.style.display === "") {
+  //   directions.style.display = "none"
+  // }
 });
+
 //click on go button from point of interest one
 goButton.addEventListener("click", function() {
   toggleVanish(goButton);
-  toggleVanish(directions)
+  toggleVanish(directions);
+
 });
 // click on disruption
 disruption.addEventListener("click", function() {
   toggleVanish(disruptionInfo)
 })
-
-
-
-
-
